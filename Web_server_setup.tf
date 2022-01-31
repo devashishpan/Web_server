@@ -48,7 +48,7 @@ resource "null_resource" "config_webserver" {
     ]
   }
   provisioner "local-exec" {
-    command = "chrome ${aws_instance.web_server.public_ip}"
+    command = "google-chrome ${aws_instance.web_server.public_ip}"
   }
 }
 
